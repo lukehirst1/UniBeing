@@ -58,7 +58,7 @@ const rules = [
     ]
   },
   {
-    keywords: ["motivat", "unmotivated", "lazy", "procrastinat", "can't focus", "distracted", "stuck"],
+    keywords: ["motivate", "unmotivated", "lazy", "procrastinate", "can't focus", "distracted", "stuck"],
     responses: [
       "Motivation can be hard to find — try the 2-minute rule: if something takes less than 2 minutes, do it now. Small wins build momentum! 💙",
       "Starting is often the hardest part. Set a timer for just 10 minutes and work on one task. You'll often find you keep going once you've started.",
