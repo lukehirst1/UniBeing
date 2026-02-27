@@ -40,4 +40,3 @@ const affirmations = [
   "I choose to believe in myself today."
 ];
 
-export default affirmations;
