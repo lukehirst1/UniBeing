@@ -48,6 +48,95 @@
     .menu li:nth-child(6) a { background: #ffd5d5; color: #8a1a1a; border: 2px solid #e05050; }
 
     /* =====================================================
+       MOBILE RESPONSIVE
+    ===================================================== */
+    @media (max-width: 768px) {
+
+      /* Wrapper - single column */
+      #wrapper {
+        display: block !important;
+        padding: 0 !important;
+        margin: 0 !important;
+        width: 100% !important;
+        max-width: 100% !important;
+      }
+
+      /* Header */
+      .banner {
+        padding: 1em !important;
+        text-align: center !important;
+      }
+      .banner h1 { font-size: 1.6em !important; }
+      .banner p  { font-size: 0.9em !important; }
+
+      /* Nav tiles - 2 columns on mobile */
+      .menu ul {
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 0.5em !important;
+        padding: 0.5em !important;
+      }
+      .menu a { font-size: 0.8em !important; padding: 0.7em 0.3em !important; }
+
+      /* Main content */
+      main {
+        padding: 0.75em !important;
+        width: 100% !important;
+        box-sizing: border-box !important;
+      }
+
+      /* Headings */
+      main h2 { font-size: 1.2em !important; }
+
+      /* Mood buttons - wrap naturally */
+      .mood-buttons { gap: 0.5em !important; }
+      .mood-btn {
+        padding: 0.5em 0.8em !important;
+        font-size: 1.3em !important;
+      }
+
+      /* Quote & affirmation cards */
+      .quote-card, .affirmation-card {
+        padding: 1em !important;
+      }
+      .quote-card p, .affirmation-card p { font-size: 1em !important; }
+
+      /* Chat section */
+      #chat-box { height: 260px !important; }
+      .chat-message { max-width: 92% !important; font-size: 0.88em !important; }
+      .quick-buttons { gap: 0.4em !important; padding: 0.5em !important; }
+      .quick-btn { font-size: 0.78em !important; padding: 0.3em 0.7em !important; }
+      .chat-input-area { padding: 0.75em !important; }
+      #user-input { font-size: 0.9em !important; }
+      #send-btn { padding: 0.5em 1em !important; font-size: 0.9em !important; }
+
+      /* Exercises */
+      .exercise-toggle { font-size: 0.92em !important; padding: 0.8em 1em !important; }
+
+      /* Crisis box */
+      .crisis-box { padding: 1em !important; }
+      .crisis-box li { font-size: 0.88em !important; }
+
+      /* Aside - move below main */
+      aside {
+        display: block !important;
+        padding: 0.75em !important;
+        margin: 0 !important;
+        width: 100% !important;
+        box-sizing: border-box !important;
+      }
+
+      /* Footer */
+      footer { text-align: center !important; padding: 1em !important; }
+    }
+
+    /* Extra small screens (phones < 400px) */
+    @media (max-width: 400px) {
+      .menu ul { grid-template-columns: repeat(2, 1fr) !important; }
+      .mood-btn { padding: 0.4em 0.6em !important; font-size: 1.2em !important; }
+      #chat-box { height: 220px !important; }
+    }
+
+    /* =====================================================
        DYSLEXIA-FRIENDLY MODE
     ===================================================== */
     body.dyslexia {
@@ -409,16 +498,16 @@
       <div class="mood-tracker" role="region" aria-label="Mood tracker">
         <h3>Track your mood</h3>
         <div class="mood-buttons" role="group" aria-label="Select your mood">
-          <button class="mood-btn" onclick="logMood('Happy', '😊', event)" aria-label="Happy">
+          <button class="mood-btn" onclick="logMood('Happy', event)" aria-label="Happy">
             😊<span class="mood-label">Happy</span>
           </button>
-          <button class="mood-btn" onclick="logMood('Okay', '😐', event)" aria-label="Okay">
+          <button class="mood-btn" onclick="logMood('Okay',  event)" aria-label="Okay">
             😐<span class="mood-label">Okay</span>
           </button>
-          <button class="mood-btn" onclick="logMood('Sad', '😢', event)" aria-label="Sad">
+          <button class="mood-btn" onclick="logMood('Sad',  event)" aria-label="Sad">
             😢<span class="mood-label">Sad</span>
           </button>
-          <button class="mood-btn" onclick="logMood('Anxious', '😰', event)" aria-label="Anxious">
+          <button class="mood-btn" onclick="logMood('Anxious', event)" aria-label="Anxious">
             😰<span class="mood-label">Anxious</span>
           </button>
           <button class="mood-btn" onclick="logMood('Angry', '😤', event)" aria-label="Angry">
@@ -518,7 +607,7 @@
 
     <!-- ASIDE -->
     <aside role="complementary" aria-label="Your progress">
-      <h3>Your Wellbeing Streak 🔥</h3>
+      <h3> 🔥Your Wellbeing Streak</h3>
       <p id="streak-display">Check in daily to build your streak!</p>
       <h3 style="margin-top:1em;">🏅 Badges</h3>
       <p id="badge-display">Keep using UniBeing to earn badges!</p>
@@ -645,6 +734,8 @@
       // =====================================================
       // 🔊 TEXT-TO-SPEECH — LUKE TO IMPLEMENT HERE (Week 4)
       // Add a speaker button to botDiv that calls speakText()
+      // speakText() should use the SpeechSynthesis API
+      // Example: botDiv.innerHTML += '<button onclick="speakText(...)">🔊</button>'
       // =====================================================
       chatBox.appendChild(botDiv);
       chatBox.scrollTop = chatBox.scrollHeight;
