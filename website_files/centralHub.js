@@ -98,7 +98,7 @@ const rules = [
     responses: [
       "Hey there! 👋 I'm BeingBot, your wellbeing companion. How are you feeling today?",
       "Hello! 😊 I'm BeingBot — here to support you. What's on your mind?",
-      "Hi! Great to see you. I'm BeingBot. How are you doing today? ",
+      "Hi! Great to see you. I'm BeingBot. How are you doing today?",
       "Hey! I'm BeingBot. Whether you need a chat, some tips, or just a motivational quote — I'm here for you! 😊"
     ]
   },
