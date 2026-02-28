@@ -78,7 +78,7 @@ const rules = [
   {
     keywords: ["tip", "tips", "advice", "help", "resource", "resources", "support", "what can i do"],
     responses: [
-      "Here are some quick wellbeing tips: 💙\n• Stay hydrated — drink water regularly\n• Get outside for at least 10 minutes a day\n• Reach out to someone you trust\n• Try to get 7-9 hours of sleep\n• Take breaks — rest is productive too!",
+      "Here are some quick wellbeing tips: \n• Stay hydrated — drink water regularly\n• Get outside for at least 10 minutes a day\n• Reach out to someone you trust\n• Try to get 7-9 hours of sleep\n• Take breaks — rest is productive too!",
       "Some great resources for you:\n• Student Minds: studentminds.org.uk\n• Mind: mind.org.uk\n• Samaritans: 116 123 (free, 24/7)\n• Your university counselling service is always a great first step too! 💙",
       "Self-care doesn't have to be complicated. Try: a short walk, a warm drink, journaling for 5 minutes, or simply resting without guilt. You deserve care. 💙",
       "Looking after your mental health starts with small habits: consistent sleep, regular meals, movement, and connection with others. Which of these could you try today?"
@@ -98,7 +98,7 @@ const rules = [
     responses: [
       "Hey there! 👋 I'm BeingBot, your wellbeing companion. How are you feeling today?",
       "Hello! 😊 I'm BeingBot — here to support you. What's on your mind?",
-      "Hi! Great to see you. I'm BeingBot. How are you doing today? 💙",
+      "Hi! Great to see you. I'm BeingBot. How are you doing today? ",
       "Hey! I'm BeingBot. Whether you need a chat, some tips, or just a motivational quote — I'm here for you! 😊"
     ]
   },
