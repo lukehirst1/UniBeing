@@ -498,29 +498,29 @@
       <div class="mood-tracker" role="region" aria-label="Mood tracker">
         <h3>Track your mood</h3>
         <div class="mood-buttons" role="group" aria-label="Select your mood">
-          <button class="mood-btn" onclick="logMood('Happy', event)" aria-label="Happy">
-            😊<span class="mood-label">Happy</span>
+          <button class="mood-btn" onclick="logMood('Happy', '😊', event)" aria-label="Happy">
+            <span class="mood-label">Happy</span>
           </button>
-          <button class="mood-btn" onclick="logMood('Okay',  event)" aria-label="Okay">
-            😐<span class="mood-label">Okay</span>
+          <button class="mood-btn" onclick="logMood('Okay', '😐', event)" aria-label="Okay">
+            <span class="mood-label">Okay</span>
           </button>
-          <button class="mood-btn" onclick="logMood('Sad',  event)" aria-label="Sad">
-            😢<span class="mood-label">Sad</span>
+          <button class="mood-btn" onclick="logMood('Sad', '😢' , event)" aria-label="Sad">
+            <span class="mood-label">Sad</span>
           </button>
-          <button class="mood-btn" onclick="logMood('Anxious', event)" aria-label="Anxious">
-            😰<span class="mood-label">Anxious</span>
+          <button class="mood-btn" onclick="logMood('Anxious', '😰', event)" aria-label="Anxious">
+            <span class="mood-label">Anxious</span>
           </button>
           <button class="mood-btn" onclick="logMood('Angry', '😤', event)" aria-label="Angry">
-            😤<span class="mood-label">Angry</span>
+            <span class="mood-label">Angry</span>
           </button>
           <button class="mood-btn" onclick="logMood('Tired', '😴', event)" aria-label="Tired">
-            😴<span class="mood-label">Tired</span>
+            <span class="mood-label">Tired</span>
           </button>
           <button class="mood-btn" onclick="logMood('Motivated', '💪', event)" aria-label="Motivated">
-            💪<span class="mood-label">Motivated</span>
+            <span class="mood-label">Motivated</span>
           </button>
           <button class="mood-btn" onclick="logMood('Grateful', '🙏', event)" aria-label="Grateful">
-            🙏<span class="mood-label">Grateful</span>
+            <span class="mood-label">Grateful</span>
           </button>
         </div>
         <p id="mood-feedback" style="font-family:'Nunito',Arial,sans-serif;color:#2e8f97;font-weight:600;min-height:1.5em;"></p>
@@ -734,8 +734,6 @@
       // =====================================================
       // 🔊 TEXT-TO-SPEECH — LUKE TO IMPLEMENT HERE (Week 4)
       // Add a speaker button to botDiv that calls speakText()
-      // speakText() should use the SpeechSynthesis API
-      // Example: botDiv.innerHTML += '<button onclick="speakText(...)">🔊</button>'
       // =====================================================
       chatBox.appendChild(botDiv);
       chatBox.scrollTop = chatBox.scrollHeight;
