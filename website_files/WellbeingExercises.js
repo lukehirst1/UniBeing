@@ -494,4 +494,3 @@ const wellbeingExercises = [
 
 // wellbeingExercises array is available globally
 
-// ---- APPENDED EXERCISES ----
